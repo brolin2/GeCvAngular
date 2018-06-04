@@ -1,0 +1,9 @@
+
+<ul class="curriculum-list">
+    <li *ngFor="let cv of app.cvsa">
+      <a routerLink="/detail/{{cv.Matricola}}"> 
+        <span class="badge">{{cv.Matricola}}</span>
+        {{cv.Nome}}
+       </a> 
+    </li>
+  </ul>

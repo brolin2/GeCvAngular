@@ -1,0 +1,14 @@
+
+<div >
+  <h3>Competenze</h3>
+  <a  routerLink="./comp-add"><button>ADD Comp</button> </a>  
+</div>
+
+<ul class="curriculum-list" *ngIf = "comps">
+  <li *ngFor = "let comp of comps">
+    <a routerLink="./comp/{{comp.Id}}">
+      <span class="badge">{{comp.Id}}</span>
+      {{comp.Titolo}}
+    </a>
+  </li>
+</ul>

@@ -1,0 +1,22 @@
+
+<h3>Aggiungi Esperienza Lavorativa</h3>
+<div>
+    <label> QUALIFICA:
+        <input #quaE placeholder="qualifica..."/>
+    </label>
+    <br>
+    <label> DESCRIZIONE:
+        <input  #desE placeholder="descrizione.."/>
+    </label>
+    <br>
+    <label>ANNO INIZIO:
+        <input type="number" #AIE placeholder="Anno Inizio..."/>
+    </label>
+    <br>
+    <label> ANNO FINE : 
+        <input type="number" #AFE placeholder="Anno Fine..."/>
+    </label>
+    <br>
+    <button class="btn-success" (click)="addEsp(quaE.value , desE.value , AIE.value , AFE.value)">AGGIUNGI</button>
+    <button (click) = "goBack()">GO BACK</button>
+</div>
